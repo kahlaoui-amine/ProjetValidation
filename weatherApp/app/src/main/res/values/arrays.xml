@@ -1,0 +1,38 @@
+<resources>
+    <!-- Temperature Preference -->
+    <string-array name="temperature_entries">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="temperature_values">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+        <item>kelvin</item>
+    </string-array>
+
+    <!-- Wind Preference -->
+    <string-array name="wind_entries">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+    </string-array>
+
+    <string-array name="wind_values">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+    </string-array>
+
+    <!-- Time Prefrence -->
+    <string-array name="time_entries">
+        <item>12-hour</item>
+        <item>24-hour</item>
+    </string-array>
+
+    <string-array name="time_values">
+        <item>12-hour</item>
+        <item>24-hour</item>
+    </string-array>
+</resources>

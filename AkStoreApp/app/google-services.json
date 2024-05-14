@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "152944731503",
+    "firebase_url": "https://comm-92a1d-default-rtdb.firebaseio.com",
+    "project_id": "comm-92a1d",
+    "storage_bucket": "comm-92a1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152944731503:android:eff90d34b83574438a749a",
+        "android_client_info": {
+          "package_name": "com.example.votenow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914877219193-piollm9brn0conkliepub441ho48m3ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQV9Hz5nehCsGRR0nySeQMkPjODH8TSYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

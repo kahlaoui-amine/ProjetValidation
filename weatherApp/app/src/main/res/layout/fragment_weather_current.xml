@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.WeatherCurrent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sun"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:id="@+id/llTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="133dp"
+                android:text="@string/_0"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:paddingTop="13dp"
+                android:text="@string/unit_c"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <GridLayout
+            android:id="@+id/glWeatherDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:useDefaultMargins="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMinMax"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/min_max_n"
+                app:drawableLeftCompat="@drawable/ic_temperature" />
+
+            <TextView
+                android:id="@+id/tvFeelsLike"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/feels_like_n"
+                app:drawableLeftCompat="@drawable/ic_temperature" />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/humidity_n"
+                app:drawableLeftCompat="@drawable/ic_humidity" />
+
+            <TextView
+                android:id="@+id/tvWindSpeed"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/wind_speed_n"
+                app:drawableLeftCompat="@drawable/ic_wind" />
+
+            <TextView
+                android:id="@+id/tvSunrise"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/sunrise_n"
+                app:drawableLeftCompat="@drawable/ic_sunrise" />
+
+            <TextView
+                android:id="@+id/tvSunset"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawablePadding="5dp"
+                android:text="@string/sunset_n"
+                app:drawableLeftCompat="@drawable/ic_sunset" />
+        </GridLayout>
+    </LinearLayout>
+</FrameLayout>
